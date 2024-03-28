@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Climbing Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title">What Type of Climber Are You?</h1>
+        <p id="description">This survey will help us build better climbing demographics</p>
+      </header>
+      <form id="survey-form">
+        <div class="general-divs">
+          <label id="name-label" for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              class="info-and-grade"
+              placeholder="Enter your name"
+              required>
+          <label id="email-label" for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              class="info-and-grade"
+              placeholder="Enter your email"
+              required>
+          <label id="number-label" for="number">Age</label>
+            <input
+              id="number"
+              type="number"
+              min="10"
+              max="100"
+              name="age"
+              class="info-and-grade"
+              placeholder="Age"
+              required>
+        </div>
+        <div class="general-divs">
+          <p>What is your current flash grade?</p>
+          <select id="dropdown" name="flash-grade" class="info-and-grade" required>
+            <option disabled selected>Select current grade</option>
+            <option value="lower-than-6a">6a or lower</option>
+            <option value="6a+-6b+">6a+ to 6b+</option>
+            <option value="6c-7a+">6c to 7a+</option>
+            <option value="7b-7c+">7b to 7c+</option>
+            <option value="8a-8b+">8a to 8b+</option>
+            <option value="8c or higher">8c or higher</option>
+          </select>
+        </div>
+        <div class="general-divs">
+          <p>What is your curent redpoint grade?</p>
+          <select id="dropdown" name="redpoint-grade" class="info-and-grade" required>
+            <option disabled selected>Select current grade</option>
+            <option value="lower-than-6a">6a or lower</option>
+            <option value="6a+-6b+">6a+ to 6b+</option>
+            <option value="6c-7a+">6c to 7a+</option>
+            <option value="7b-7c+">7b to 7c+</option>
+            <option value="8a-8b+">8a to 8b+</option>
+            <option value="8c or higher">8c or higher</option>
+          </select>
+        </div>
+        <div class="general-divs">
+          <p>What clibing disciplines do you enjoy the most?</p>
+          <label>
+            <input
+              name="climbing-discipline"
+              value="bouldering"
+              type="checkbox"
+              class="input-checkbox"
+              required>Bouldering</label>
+            <label>
+            <input
+              name="climbing-discipline"
+              value="bouldering"
+              type="checkbox"
+              class="input-checkbox">Deep-water solo</label>
+          <label>
+            <input
+              name="climbing-discipline"
+              value="sport"
+              type="checkbox"
+              class="input-checkbox">Sport</label>
+          <label>
+            <input
+              name="climbing-discipline"
+              value="bouldering"
+              type="checkbox"
+              class="input-checkbox">Trad</label>
+          <label>
+            <input
+              name="climbing-discipline"
+              value="multi-pitch"
+              type="checkbox"
+              class="input-checkbox">Multi-pitch</label>
+          <label>
+            <input
+              name="climbing-discipline"
+              value="bouldering"
+              type="checkbox"
+              class="input-checkbox">Ice climbing</label>
+          <label>
+            <input
+              name="climbing-discipline"
+              value="alpine"
+              type="checkbox"
+              class="input-checkbox">Alpine</label>
+        </div>
+        <div class="general-divs">
+          <p>Are you more of an indoors or outdoors climber?</p>
+          <label>
+            <input
+              name="indoor-outdoor"
+              value="indoor"
+              type="radio"
+              class="input-radio"
+              required>Indoors</label>
+          <label>
+            <input
+              name="indoor-outdoor"
+              value="outdoor"
+              type="radio"
+              class="input-radio">Outdoors</label>
+          <label>
+            <input
+              name="indoor-outdoor"
+              value="both"
+              type="radio"
+              class="input-radio">Both</label>
+        </div>
+        <div class="general-divs">
+          <p>Anything else you would like to share?</p>
+          <textarea
+            id="additional-info"
+            class="input-textarea"
+            name="additional-info"
+            placeholder="Write your comments here"></textarea>
+        </div>
+        <div class="general-divs">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
