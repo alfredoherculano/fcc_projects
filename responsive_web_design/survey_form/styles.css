@@ -1,0 +1,76 @@
+body {
+  min-width: 240px;
+  width: 80%;
+  height: 100vh;
+  margin: 20 auto;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d6/Half_Dome_from_Glacier_Point%2C_Yosemite_NP_-_Diliff.jpg);
+  background-position: center;
+  font-family: helvetica;
+  font-size: 16px;
+  padding: 17px;
+}
+
+label {
+  display: block;
+  margin: 0.4rem 0;
+}
+
+.container {
+  width: auto;
+  height: 150vh;
+  margin: 0 auto;
+  background-color: #9aba;
+  padding: 1px;
+}
+
+.header {
+  text-align: center;
+  padding: 0 0 35 0;
+}
+
+.description {
+  padding-top: -5 auto;
+}
+
+.general-divs {
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.info-and-grade {
+  display: block;
+  width: 100%;
+  height: 2rem;
+  padding: 0.18rem;
+  border: 1px solid black;
+}
+
+.input-checkbox {
+  display: inline;
+  margin-right: 0.5rem;
+  margin-top: auto;
+  min-width: 1rem;
+  min-height: 1rem;
+  vertical-align: middle;
+}
+
+.input-radio {
+  display: inline;
+  margin-right: 0.5rem;
+  margin-top: auto;
+  min-width: 1rem;
+  min-height: 1rem;
+}
+
+.input-textarea {
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  display: block;
+  width: 25%;
+  padding: 0.3rem;
+  border-radius: 1px;
+}
