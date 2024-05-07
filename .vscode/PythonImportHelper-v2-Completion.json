@@ -1,0 +1,200 @@
+[
+    {
+        "label": "start_time",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "start_time = input('Enter start time: ')\nduration = input('Enter duration: ')\nstart_time = start_time.split()\nnum_time = start_time[0].split(':')\nstart_hours = int(num_time[0])\nstart_minutes = int(num_time[1])\nduration_hours = int(duration.split(':')[0])\nduration_minutes = int(duration.split(':')[1])\nshift = start_time[1]\ntotal_minutes1 = (start_hours * 60) + start_minutes",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "duration",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "duration = input('Enter duration: ')\nstart_time = start_time.split()\nnum_time = start_time[0].split(':')\nstart_hours = int(num_time[0])\nstart_minutes = int(num_time[1])\nduration_hours = int(duration.split(':')[0])\nduration_minutes = int(duration.split(':')[1])\nshift = start_time[1]\ntotal_minutes1 = (start_hours * 60) + start_minutes\ntotal_minutes2 = (duration_hours * 60) + duration_minutes",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "start_time",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "start_time = start_time.split()\nnum_time = start_time[0].split(':')\nstart_hours = int(num_time[0])\nstart_minutes = int(num_time[1])\nduration_hours = int(duration.split(':')[0])\nduration_minutes = int(duration.split(':')[1])\nshift = start_time[1]\ntotal_minutes1 = (start_hours * 60) + start_minutes\ntotal_minutes2 = (duration_hours * 60) + duration_minutes\nfinal_hours = (total_minutes1 + total_minutes2) / 60",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "num_time",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "num_time = start_time[0].split(':')\nstart_hours = int(num_time[0])\nstart_minutes = int(num_time[1])\nduration_hours = int(duration.split(':')[0])\nduration_minutes = int(duration.split(':')[1])\nshift = start_time[1]\ntotal_minutes1 = (start_hours * 60) + start_minutes\ntotal_minutes2 = (duration_hours * 60) + duration_minutes\nfinal_hours = (total_minutes1 + total_minutes2) / 60\nfinal_minutes = (final_hours % 1) * 60",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "start_hours",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "start_hours = int(num_time[0])\nstart_minutes = int(num_time[1])\nduration_hours = int(duration.split(':')[0])\nduration_minutes = int(duration.split(':')[1])\nshift = start_time[1]\ntotal_minutes1 = (start_hours * 60) + start_minutes\ntotal_minutes2 = (duration_hours * 60) + duration_minutes\nfinal_hours = (total_minutes1 + total_minutes2) / 60\nfinal_minutes = (final_hours % 1) * 60\nif final_hours > 12:",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "start_minutes",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "start_minutes = int(num_time[1])\nduration_hours = int(duration.split(':')[0])\nduration_minutes = int(duration.split(':')[1])\nshift = start_time[1]\ntotal_minutes1 = (start_hours * 60) + start_minutes\ntotal_minutes2 = (duration_hours * 60) + duration_minutes\nfinal_hours = (total_minutes1 + total_minutes2) / 60\nfinal_minutes = (final_hours % 1) * 60\nif final_hours > 12:\n\tif shift == 'AM':",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "duration_hours",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "duration_hours = int(duration.split(':')[0])\nduration_minutes = int(duration.split(':')[1])\nshift = start_time[1]\ntotal_minutes1 = (start_hours * 60) + start_minutes\ntotal_minutes2 = (duration_hours * 60) + duration_minutes\nfinal_hours = (total_minutes1 + total_minutes2) / 60\nfinal_minutes = (final_hours % 1) * 60\nif final_hours > 12:\n\tif shift == 'AM':\n\t\tshift = 'PM'",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "duration_minutes",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "duration_minutes = int(duration.split(':')[1])\nshift = start_time[1]\ntotal_minutes1 = (start_hours * 60) + start_minutes\ntotal_minutes2 = (duration_hours * 60) + duration_minutes\nfinal_hours = (total_minutes1 + total_minutes2) / 60\nfinal_minutes = (final_hours % 1) * 60\nif final_hours > 12:\n\tif shift == 'AM':\n\t\tshift = 'PM'\n\telse:",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "shift",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "shift = start_time[1]\ntotal_minutes1 = (start_hours * 60) + start_minutes\ntotal_minutes2 = (duration_hours * 60) + duration_minutes\nfinal_hours = (total_minutes1 + total_minutes2) / 60\nfinal_minutes = (final_hours % 1) * 60\nif final_hours > 12:\n\tif shift == 'AM':\n\t\tshift = 'PM'\n\telse:\n\t\tshift = 'AM'",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "total_minutes1",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "total_minutes1 = (start_hours * 60) + start_minutes\ntotal_minutes2 = (duration_hours * 60) + duration_minutes\nfinal_hours = (total_minutes1 + total_minutes2) / 60\nfinal_minutes = (final_hours % 1) * 60\nif final_hours > 12:\n\tif shift == 'AM':\n\t\tshift = 'PM'\n\telse:\n\t\tshift = 'AM'\nrest = 12 * (final_hours // 12)",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "total_minutes2",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "total_minutes2 = (duration_hours * 60) + duration_minutes\nfinal_hours = (total_minutes1 + total_minutes2) / 60\nfinal_minutes = (final_hours % 1) * 60\nif final_hours > 12:\n\tif shift == 'AM':\n\t\tshift = 'PM'\n\telse:\n\t\tshift = 'AM'\nrest = 12 * (final_hours // 12)\nif int(final_hours) == 12:",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "final_hours",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "final_hours = (total_minutes1 + total_minutes2) / 60\nfinal_minutes = (final_hours % 1) * 60\nif final_hours > 12:\n\tif shift == 'AM':\n\t\tshift = 'PM'\n\telse:\n\t\tshift = 'AM'\nrest = 12 * (final_hours // 12)\nif int(final_hours) == 12:\n\tfinal_hours = rest + (final_hours % 12)",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "final_minutes",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "final_minutes = (final_hours % 1) * 60\nif final_hours > 12:\n\tif shift == 'AM':\n\t\tshift = 'PM'\n\telse:\n\t\tshift = 'AM'\nrest = 12 * (final_hours // 12)\nif int(final_hours) == 12:\n\tfinal_hours = rest + (final_hours % 12)\nelse:",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tshift",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "\t\tshift = 'PM'\n\telse:\n\t\tshift = 'AM'\nrest = 12 * (final_hours // 12)\nif int(final_hours) == 12:\n\tfinal_hours = rest + (final_hours % 12)\nelse:\n\tfinal_hours = abs(rest - (rest + (final_hours % 12)))\nif int(final_hours) == 0:\n\tfinal_hours += 12",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tshift",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "\t\tshift = 'AM'\nrest = 12 * (final_hours // 12)\nif int(final_hours) == 12:\n\tfinal_hours = rest + (final_hours % 12)\nelse:\n\tfinal_hours = abs(rest - (rest + (final_hours % 12)))\nif int(final_hours) == 0:\n\tfinal_hours += 12\nfinal_minutes = '{:.2f}'.format(final_minutes)\nif len(final_minutes) < 5:",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "rest",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "rest = 12 * (final_hours // 12)\nif int(final_hours) == 12:\n\tfinal_hours = rest + (final_hours % 12)\nelse:\n\tfinal_hours = abs(rest - (rest + (final_hours % 12)))\nif int(final_hours) == 0:\n\tfinal_hours += 12\nfinal_minutes = '{:.2f}'.format(final_minutes)\nif len(final_minutes) < 5:\n\tfinal_minutes = '0' + final_minutes",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "\tfinal_hours",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "\tfinal_hours = rest + (final_hours % 12)\nelse:\n\tfinal_hours = abs(rest - (rest + (final_hours % 12)))\nif int(final_hours) == 0:\n\tfinal_hours += 12\nfinal_minutes = '{:.2f}'.format(final_minutes)\nif len(final_minutes) < 5:\n\tfinal_minutes = '0' + final_minutes\nelse:\n\tpass",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "\tfinal_hours",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "\tfinal_hours = abs(rest - (rest + (final_hours % 12)))\nif int(final_hours) == 0:\n\tfinal_hours += 12\nfinal_minutes = '{:.2f}'.format(final_minutes)\nif len(final_minutes) < 5:\n\tfinal_minutes = '0' + final_minutes\nelse:\n\tpass\nfinal_time = str(final_hours).split('.')[0] + ':' + final_minutes.split('.')[0] + ' ' + shift\nprint(final_time)",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "final_minutes",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "final_minutes = '{:.2f}'.format(final_minutes)\nif len(final_minutes) < 5:\n\tfinal_minutes = '0' + final_minutes\nelse:\n\tpass\nfinal_time = str(final_hours).split('.')[0] + ':' + final_minutes.split('.')[0] + ' ' + shift\nprint(final_time)",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "\tfinal_minutes",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "\tfinal_minutes = '0' + final_minutes\nelse:\n\tpass\nfinal_time = str(final_hours).split('.')[0] + ':' + final_minutes.split('.')[0] + ' ' + shift\nprint(final_time)",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "final_time",
+        "kind": 5,
+        "importPath": "Scientific Computing with Python.add_time",
+        "description": "Scientific Computing with Python.add_time",
+        "peekOfCode": "final_time = str(final_hours).split('.')[0] + ':' + final_minutes.split('.')[0] + ' ' + shift\nprint(final_time)",
+        "detail": "Scientific Computing with Python.add_time",
+        "documentation": {}
+    },
+    {
+        "label": "arithmetic_arranger",
+        "kind": 2,
+        "importPath": "Scientific Computing with Python.arithmetic_arranger",
+        "description": "Scientific Computing with Python.arithmetic_arranger",
+        "peekOfCode": "def arithmetic_arranger(problems, show_results=False):\n    import operator\n    ops = {'+':operator.add, '-':operator.sub}\n    if len(problems) <= 5:\n        answers = []\n        line1 = ''\n        line2 = ''\n        dashes = ''\n        solution = ''\n        for item in problems:",
+        "detail": "Scientific Computing with Python.arithmetic_arranger",
+        "documentation": {}
+    }
+]
