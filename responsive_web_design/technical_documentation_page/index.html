@@ -13,6 +13,8 @@
             <ul>
                 <li><a class="nav-link" href="#about">About</a></li>
                 <li><a class="nav-link" href="#installing_git">Getting Started</a></li>
+                <li><a class="nav-link" href="#first_time_setup">First Time Setup</a></li>
+                <li><a class="nav-link" href="#getting_a_repo">Getting a Git Repository</a></li>
             </ul>
         </nav>
         <main id="main-doc">
@@ -44,13 +46,29 @@
                     Follow the instructions at <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>.
                 </p>
             </section>
-            <section class="main-section">
-                <header></header>
-                <code></code>
+            <section class="main-section" id="first_time_setup">
+                <header>First Time Setup</header>
+                <p>You'll only need to do this one time for each machine.</p>
+                <p>First, you need to setup your username and email:</p>
+                <code>
+                    $ git config --global user.name "John Doe"
+                    $ git config --global user.email johndoe@example.com
+                </code>
+                <p>To set a <code>main</code> as your default branch name you can run the following:</p>
+                <code>
+                    $ git config --global init.defaultBranch main    
+                </code>
+                <p>Finally, to check your configuration settings you can run:</p>
+                <code>$ git config --list</code>
             </section>
-            <section class="main-section">
-                <header></header>
-                <li></li>
+            <section class="main-section" id="getting_a_repo">
+                <header>Getting a Git Repository</header>
+                <h1>Initializing a Repository in an Existing Directory</h1>
+                <p>In your terminal, navigate to the directory you want to turn into a Git repository and type:</p>
+                <code>
+                    $ git init
+                </code>
+                <p>This creates a folder named <code>.git</code> that contains all the necessary repository files.</p>
             </section>
         </main>
     </body>
