@@ -1,0 +1,43 @@
+html {
+    background-color: #f2f2ee;
+    font-family: 'Raleway';
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #b2beb5;
+    width: auto;
+    height: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar header {
+    font-size: 25px;
+    padding-bottom: 13px;
+}
+
+.nav-link {
+    display: block;
+    padding: 4px 6px 17px 6px;
+    text-decoration: none;
+    color: #434844
+}
+
+#main-doc {
+    flex: 1;
+    margin-left: 0;
+}
+
+header {
+    font-size: 30px;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 23px;
+}

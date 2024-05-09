@@ -6,18 +6,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="freeCodeCamp Technical Docs project">
         <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     </head>
     <body>
         <nav id="navbar">
             <header>Git Basics</header>
-            <ul>
-                <li><a class="nav-link" href="#about">About</a></li>
-                <li><a class="nav-link" href="#installing_git">Getting started</a></li>
-                <li><a class="nav-link" href="#first_time_setup">First time setup</a></li>
-                <li><a class="nav-link" href="#getting_a_repo">Getting a Git repository</a></li>
-                <li><a class="nav-link" href="#repo_changes">Changes to the repository</a></li>
-                <li><a class="nav-link" href="#working_with_remotes">Working with remotes</a></li>
-            </ul>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#installing_git">Getting started</a>
+            <a class="nav-link" href="#first_time_setup">First time setup</a>
+            <a class="nav-link" href="#getting_a_repo">Getting a Git repository</a>
+            <a class="nav-link" href="#repo_changes">Changes to the repository</a>
+            <a class="nav-link" href="#working_with_remotes">Working with remotes</a>
+            <a class="nav-link" href="#reference">Reference</a>
         </nav>
         <main id="main-doc">
             <section class="main-section" id="about"></section>
@@ -26,7 +26,8 @@
                     Git is a version control system originally developed by Linus Torvalds,
                     creator of the Linux operating system. Version control is a way to
                     record changes to a file or system of files over time so that you
-                    can recall specific versions later.
+                    can recall specific versions later. This document will present some basic
+                    operations with Git.
                 </p>
             </section>
             <section class="main-section" id="installing_git">
@@ -101,6 +102,31 @@
             <section class="main-section" id="working_with_remotes">
                 <header>Working with remotes</header>
                 <p>Remote repositories are versions of your projects that are hosted on the internet or network somewhere.</p>
+                <h1>Showing your remotes</h1>
+                <p>
+                    To see which remote repositories you have configured, run the <code>git remote</code> command. If no output
+                    is given it means you have not configured any remote repository.
+                </p>
+                <h1>Adding remote repositories</h1>
+                <p>
+                    Run <code>git remote add &ltshortname&gt &lturl&gt</code>, where "shortname" is the name you want for your remote.
+                    By default, Git adds "origin" as a shortname. If you don't want to change that, your command would look like this:
+                    <code>git remote add origin &lturl&gt</code>
+                </p>
+                <h1>Fetching and pulling</h1>
+                <p>
+                    To get data from your remote projects, you can run <code>git fetch &ltremote&gt</code>. This pulls down all the data
+                    from that project, but doesn't merge it locally. If you want to automatically fetch and merge, you can use
+                    <code>git pull</code>.
+                </p>
+                <h1>Pushing to your remotes</h1>
+                <p>
+                    To share the changes you made locally with your remote repository, run <code>git push &ltremote&gt &ltbranch&gt</code>.
+                </p>
+            </section>
+            <section class="main-section" id="reference">
+                <header>Reference</header>
+                <p>All the information found here was taken from the <a href="https://git-scm.com/doc">Git</a> oficcial documentation.</p>
             </section>
         </main>
     </body>
