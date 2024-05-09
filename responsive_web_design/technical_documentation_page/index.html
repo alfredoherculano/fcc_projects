@@ -9,12 +9,14 @@
     </head>
     <body>
         <nav id="navbar">
-            <header>Git Documentation</header>
+            <header>Git Basics</header>
             <ul>
                 <li><a class="nav-link" href="#about">About</a></li>
-                <li><a class="nav-link" href="#installing_git">Getting Started</a></li>
-                <li><a class="nav-link" href="#first_time_setup">First Time Setup</a></li>
-                <li><a class="nav-link" href="#getting_a_repo">Getting a Git Repository</a></li>
+                <li><a class="nav-link" href="#installing_git">Getting started</a></li>
+                <li><a class="nav-link" href="#first_time_setup">First time setup</a></li>
+                <li><a class="nav-link" href="#getting_a_repo">Getting a Git repository</a></li>
+                <li><a class="nav-link" href="#repo_changes">Changes to the repository</a></li>
+                <li><a class="nav-link" href="#working_with_remotes">Working with remotes</a></li>
             </ul>
         </nav>
         <main id="main-doc">
@@ -47,7 +49,7 @@
                 </p>
             </section>
             <section class="main-section" id="first_time_setup">
-                <header>First Time Setup</header>
+                <header>First time setup</header>
                 <p>You'll only need to do this one time for each machine.</p>
                 <p>First, you need to setup your username and email:</p>
                 <code>
@@ -62,13 +64,39 @@
                 <code>$ git config --list</code>
             </section>
             <section class="main-section" id="getting_a_repo">
-                <header>Getting a Git Repository</header>
+                <header>Getting a Git repository</header>
                 <h1>Initializing a Repository in an Existing Directory</h1>
                 <p>In your terminal, navigate to the directory you want to turn into a Git repository and type:</p>
                 <code>
                     $ git init
                 </code>
                 <p>This creates a folder named <code>.git</code> that contains all the necessary repository files.</p>
+                <h1>Cloning an Existing Git Repository</h1>
+                <p>
+                    To get a copy of an existing Git repository, the command is <code>git clone</code> followed by
+                    the address of the repository you want to clone.
+                </p>
+                <code>git clone &lturl&gt</code>
+            </section>
+            <section class="main-section" id="repo_changes">
+                <header>Recording changes to the repository</header>
+                <p>
+                    Each file in your work directory can be in one of two stages: <span class="lower">tracked</span> or <span class="lower">untracked</span>.
+                    Tracked files are files that Git knows about. Untracked files are everything else.
+                </p>
+                <h1>Checking the status of your files</h1>
+                <p>Writing <code>git status</code> will give you information about which files are in which state.</p>
+                <h1>Tracking new files</h1>
+                <p>If you add new files and want Git to start tracking it, you can do that with <code>git add</code>.</p>
+                <code>$ git add &ltfile&gt</code>
+                <h1>Commiting your changes</h1>
+                <p>
+                    After you setup your staging area, you can commit you changes with <code>git commit</code>.
+                    It is considered best practice to write a concise message explaining what was done in that commit.
+                    Do note that each company/project might have their own conventions on how to write commit messages,
+                    so be sure to check their documentation.
+                </p>
+                <code>git commit -m "message"</code>
             </section>
         </main>
     </body>
