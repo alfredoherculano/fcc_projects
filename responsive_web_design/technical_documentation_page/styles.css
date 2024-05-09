@@ -12,8 +12,6 @@ html {
     height: 100%;
     z-index: 1;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
 }
 
 #navbar header {
@@ -29,8 +27,7 @@ html {
 }
 
 #main-doc {
-    flex: 1;
-    margin-left: 0;
+    margin-left: 200px;
 }
 
 header {
