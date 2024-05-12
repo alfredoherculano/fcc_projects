@@ -14,10 +14,15 @@ html {
     overflow-x: hidden;
 }
 
+#toggle-nav, .hamburger-menu {
+    display: none;
+}
+
 #navbar header {
     font-size: 25px;
+    padding-top: 10px;
     padding-bottom: 20px;
-    margin-left: 7px;
+    margin-left: 10px;
 }
 
 .nav-link {
@@ -25,11 +30,13 @@ html {
     padding: 4px 10px 25px 6px;
     text-decoration: none;
     color: #434844;
-    margin-left: 10px;;
+    margin-left: 13px;;
 }
 
 #main-doc {
-    margin-left: 220px;
+    position: absolute;
+    top: -20px;
+    margin-left: 223px;
 }
 
 .main-section {
@@ -76,4 +83,36 @@ article a:hover {
 
 article a:visited {
     color: #800080
+}
+
+@media screen and (max-width: 767px) {
+    .hamburger-menu {
+        display: block;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        width: 30px;
+        height: 30px;
+        background: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
+        z-index: 2;
+    }
+
+    #navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #b2beb5;
+        width: auto;
+        height: 100%;
+        z-index: 1;
+        overflow-x: hidden;
+        transition: left 2s ease;
+    }
+
+    #toggle-nav:checked ~ #navbar {
+        display: block;
+        transform: translateX(0);
+        left: 0;
+    }
 }
