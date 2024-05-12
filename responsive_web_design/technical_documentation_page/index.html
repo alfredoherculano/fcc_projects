@@ -22,111 +22,123 @@
         <main id="main-doc">
             <section class="main-section" id="about"></section>
                 <header>About</header>
-                <p>
-                    Git is a version control system originally developed by Linus Torvalds,
-                    creator of the Linux operating system. Version control is a way to
-                    record changes to a file or system of files over time so that you
-                    can recall specific versions later. This document will present some basic
-                    operations with Git.
-                </p>
+                <article>
+                    <p>
+                        Git is a version control system originally developed by Linus Torvalds,
+                        creator of the Linux operating system. Version control is a way to
+                        record changes to a file or system of files over time so that you
+                        can recall specific versions later. This document will present some basic
+                        operations with Git.
+                    </p>
+                </article>
             </section>
             <section class="main-section" id="installing_git">
                 <header>Installing Git</header>
-                <h1>Installing on Linux</h1>
-                <p>
-                    It's easier to install Git on Linux through the preferred packge manager
-                    of your distribution. For that, follow the specific information at the
-                    <a href="https://git-scm.com/download/linux">Git website</a>.
-                </p>
-                <h1>Installing on macOS</h1>
-                <p>
-                    On Mavericks (10.9) or above, symply run <code>$ git --version</code> from
-                    the terminal. If you don't have it installed already, it will prompt you to
-                    do it.
-                </p>
-                <h1>Installing on Windows</h1>
-                <p>
-                    Follow the instructions at <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>.
-                </p>
+                <article>
+                    <h1>Installing on Linux</h1>
+                    <p>
+                        It's easier to install Git on Linux through the preferred packge manager
+                        of your distribution. For that, follow the specific information at the
+                        <a class="main-link" href="https://git-scm.com/download/linux">Git website</a>.
+                    </p>
+                    <h1>Installing on macOS</h1>
+                    <p>
+                        On Mavericks (10.9) or above, symply run <code>$ git --version</code> from
+                        the terminal. If you don't have it installed already, it will prompt you to
+                        do it.
+                    </p>
+                    <h1>Installing on Windows</h1>
+                    <p>
+                        Follow the instructions at <a class="main-link" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>.
+                    </p>
+                </article>
             </section>
             <section class="main-section" id="first_time_setup">
                 <header>First time setup</header>
-                <p>You'll only need to do this one time for each machine.</p>
-                <p>First, you need to setup your username and email:</p>
-                <code>
-                    $ git config --global user.name "John Doe"
-                    $ git config --global user.email johndoe@example.com
-                </code>
-                <p>To set a <code>main</code> as your default branch name you can run the following:</p>
-                <code>
-                    $ git config --global init.defaultBranch main    
-                </code>
-                <p>Finally, to check your configuration settings you can run:</p>
-                <code>$ git config --list</code>
+                <article>
+                    <p>You'll only need to do this one time for each machine.</p>
+                    <p>First, you need to setup your username and email:</p>
+                    <code class="box-display">$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com</code>
+                    <p>To set a <code>main</code> as your default branch name you can run the following:</p>
+                    <code>
+                        $ git config --global init.defaultBranch main    
+                    </code>
+                    <p>Finally, to check your configuration settings you can run:</p>
+                    <code>$ git config --list</code>
+                </article>
             </section>
             <section class="main-section" id="getting_a_repo">
                 <header>Getting a Git repository</header>
-                <h1>Initializing a Repository in an Existing Directory</h1>
-                <p>In your terminal, navigate to the directory you want to turn into a Git repository and type:</p>
-                <code>
-                    $ git init
-                </code>
-                <p>This creates a folder named <code>.git</code> that contains all the necessary repository files.</p>
-                <h1>Cloning an Existing Git Repository</h1>
-                <p>
-                    To get a copy of an existing Git repository, the command is <code>git clone</code> followed by
-                    the address of the repository you want to clone.
-                </p>
-                <code>git clone &lturl&gt</code>
+                <article>
+                    <h1>Initializing a Repository in an Existing Directory</h1>
+                    <p>In your terminal, navigate to the directory you want to turn into a Git repository and type:</p>
+                    <code>
+                        $ git init
+                    </code>
+                    <p>This creates a folder named <code>.git</code> that contains all the necessary repository files.</p>
+                    <h1>Cloning an Existing Git Repository</h1>
+                    <p>
+                        To get a copy of an existing Git repository, the command is <code>git clone</code> followed by
+                        the address of the repository you want to clone.
+                    </p>
+                    <code>git clone &lturl&gt</code>
+                </article>
             </section>
             <section class="main-section" id="repo_changes">
                 <header>Recording changes to the repository</header>
-                <p>
-                    Each file in your work directory can be in one of two stages: <span class="lower">tracked</span> or <span class="lower">untracked</span>.
-                    Tracked files are files that Git knows about. Untracked files are everything else.
-                </p>
-                <h1>Checking the status of your files</h1>
-                <p>Writing <code>git status</code> will give you information about which files are in which state.</p>
-                <h1>Tracking new files</h1>
-                <p>If you add new files and want Git to start tracking it, you can do that with <code>git add</code>.</p>
-                <code>$ git add &ltfile&gt</code>
-                <h1>Commiting your changes</h1>
-                <p>
-                    After you setup your staging area, you can commit you changes with <code>git commit</code>.
-                    It is considered best practice to write a concise message explaining what was done in that commit.
-                    Do note that each company/project might have their own conventions on how to write commit messages,
-                    so be sure to check their documentation.
-                </p>
-                <code>git commit -m "message"</code>
+                <article>
+                    <p>
+                        Each file in your work directory can be in one of two stages: <span class="lower">tracked</span> or <span class="lower">untracked</span>.
+                        Tracked files are files that Git knows about. Untracked files are everything else.
+                    </p>
+                    <h1>Checking the status of your files</h1>
+                    <p>Writing <code>git status</code> will give you information about which files are in which state.</p>
+                    <h1>Tracking new files</h1>
+                    <p>If you add new files and want Git to start tracking it, you can do that with <code>git add</code>.</p>
+                    <code>$ git add &ltfile&gt</code>
+                    <h1>Commiting your changes</h1>
+                    <p>
+                        After you setup your staging area, you can commit you changes with <code>git commit</code>.
+                        It is considered best practice to write a concise message explaining what was done in that commit.
+                        Do note that each company/project might have their own conventions on how to write commit messages,
+                        so be sure to check their documentation.
+                    </p>
+                    <code>git commit -m "message"</code>
+                </article>
             </section>
             <section class="main-section" id="working_with_remotes">
                 <header>Working with remotes</header>
-                <p>Remote repositories are versions of your projects that are hosted on the internet or network somewhere.</p>
-                <h1>Showing your remotes</h1>
-                <p>
-                    To see which remote repositories you have configured, run the <code>git remote</code> command. If no output
-                    is given it means you have not configured any remote repository.
-                </p>
-                <h1>Adding remote repositories</h1>
-                <p>
-                    Run <code>git remote add &ltshortname&gt &lturl&gt</code>, where "shortname" is the name you want for your remote.
-                    By default, Git adds "origin" as a shortname. If you don't want to change that, your command would look like this:
-                    <code>git remote add origin &lturl&gt</code>
-                </p>
-                <h1>Fetching and pulling</h1>
-                <p>
-                    To get data from your remote projects, you can run <code>git fetch &ltremote&gt</code>. This pulls down all the data
-                    from that project, but doesn't merge it locally. If you want to automatically fetch and merge, you can use
-                    <code>git pull</code>.
-                </p>
-                <h1>Pushing to your remotes</h1>
-                <p>
-                    To share the changes you made locally with your remote repository, run <code>git push &ltremote&gt &ltbranch&gt</code>.
-                </p>
+                <article>
+                    <p>Remote repositories are versions of your projects that are hosted on the internet or network somewhere.</p>
+                    <h1>Showing your remotes</h1>
+                    <p>
+                        To see which remote repositories you have configured, run the <code>git remote</code> command. If no output
+                        is given it means you have not configured any remote repository.
+                    </p>
+                    <h1>Adding remote repositories</h1>
+                    <p>
+                        Run <code>git remote add &ltshortname&gt &lturl&gt</code>, where "shortname" is the name you want for your remote.
+                        By default, Git adds "origin" as a shortname. If you don't want to change that, your command would look like this:
+                        <code>git remote add origin &lturl&gt</code>
+                    </p>
+                    <h1>Fetching and pulling</h1>
+                    <p>
+                        To get data from your remote projects, you can run <code>git fetch &ltremote&gt</code>. This pulls down all the data
+                        from that project, but doesn't merge it locally. If you want to automatically fetch and merge, you can use
+                        <code>git pull</code>.
+                    </p>
+                    <h1>Pushing to your remotes</h1>
+                    <p>
+                        To share the changes you made locally with your remote repository, run <code>git push &ltremote&gt &ltbranch&gt</code>.
+                    </p>
+                </article>
             </section>
             <section class="main-section" id="reference">
                 <header>Reference</header>
-                <p>All the information found here was taken from the <a href="https://git-scm.com/doc">Git</a> oficcial documentation.</p>
+                <article>
+                    <p>All the information found here was taken from the <a class="main-link" href="https://git-scm.com/doc">Git</a> oficcial documentation.</p>
+                </article>
             </section>
         </main>
     </body>
