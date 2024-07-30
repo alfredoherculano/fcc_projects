@@ -6,23 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="freeCodeCamp Technical Docs project">
         <link rel="stylesheet" href="styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     </head>
     <body>
         <input type="checkbox" id="toggle-nav">
         <label for="toggle-nav" class="hamburger-menu"></label>
         <nav id="navbar">
             <header>Git Basics</header>
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#installing_git">Getting started</a>
-            <a class="nav-link" href="#first_time_setup">First time setup</a>
-            <a class="nav-link" href="#getting_a_repo">Getting a Git repository</a>
-            <a class="nav-link" href="#repo_changes">Changes to the repository</a>
-            <a class="nav-link" href="#working_with_remotes">Working with remotes</a>
-            <a class="nav-link" href="#reference">Reference</a>
+            <a class="nav-link" href="#About">About</a>
+            <a class="nav-link" href="#Installing_Git">Installing Git</a>
+            <a class="nav-link" href="#First_time_setup">First time setup</a>
+            <a class="nav-link" href="#Getting_a_Git_repository">Getting a Git repository</a>
+            <a class="nav-link" href="#Changes_to_the_repository">Changes to the repository</a>
+            <a class="nav-link" href="#Working_with_remotes">Working with remotes</a>
+            <a class="nav-link" href="#Reference">Reference</a>
         </nav>
         <main id="main-doc">
-            <section class="main-section" id="About"></section>
+            <section class="main-section" id="About">
                 <header>About</header>
                 <article>
                     <p>
@@ -38,21 +38,21 @@
                 <header>Installing Git</header>
                 <article>
                     <h1>Installing on Linux</h1>
-                    <p>
-                        It's easier to install Git on Linux through the preferred packge manager
+                    <ul>
+                        <li>It's easier to install Git on Linux through the preferred package manager
                         of your distribution. For that, follow the specific information at the
-                        <a class="main-link" href="https://git-scm.com/download/linux">Git website</a>.
-                    </p>
-                    <h1>Installing on macOS</h1>
-                    <p>
-                        On Mavericks (10.9) or above, symply run <code>$ git --version</code> from
+                        <a class="main-link" href="https://git-scm.com/download/linux">Git website</a>.</li>
+                    </ul>
+                    <h2>Installing on macOS</h2>
+                    <ul>
+                        <li>On Mavericks (10.9) or above, simply run <code>$ git --version</code> from
                         the terminal. If you don't have it installed already, it will prompt you to
-                        do it.
-                    </p>
-                    <h1>Installing on Windows</h1>
-                    <p>
-                        Follow the instructions at <a class="main-link" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>.
-                    </p>
+                        do it.</li>
+                    </ul>
+                    <h3>Installing on Windows</h3>
+                    <ul>
+                        <li>Follow the instructions at <a class="main-link" href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>.</li>
+                    </ul>
                 </article>
             </section>
             <section class="main-section" id="First_time_setup">
@@ -79,7 +79,7 @@ $ git config --global user.email johndoe@example.com</code>
                         $ git init
                     </code>
                     <p>This creates a folder named <code>.git</code> that contains all the necessary repository files.</p>
-                    <h1>Cloning an Existing Git Repository</h1>
+                    <h2>Cloning an Existing Git Repository</h2>
                     <p>
                         To get a copy of an existing Git repository, the command is <code>git clone</code> followed by
                         the address of the repository you want to clone.
@@ -95,11 +95,11 @@ $ git config --global user.email johndoe@example.com</code>
                         Tracked files are files that Git knows about. Untracked files are everything else.
                     </p>
                     <h1>Checking the status of your files</h1>
-                    <p>Writing <code>git status</code> will give you information about which files are in which state.</p>
-                    <h1>Tracking new files</h1>
-                    <p>If you add new files and want Git to start tracking it, you can do that with <code>git add</code>.</p>
+                    <ul><li>Writing <code>git status</code> will give you information about which files are in which state.</li></ul>
+                    <h2>Tracking new files</h2>
+                    <ul><li>If you add new files and want Git to start tracking it, you can do that with <code>git add</code>.</li></ul>
                     <code>$ git add &ltfile&gt</code>
-                    <h1>Commiting your changes</h1>
+                    <h3>Commiting your changes</h3>
                     <p>
                         After you setup your staging area, you can commit you changes with <code>git commit</code>.
                         It is considered best practice to write a concise message explaining what was done in that commit.
@@ -118,19 +118,19 @@ $ git config --global user.email johndoe@example.com</code>
                         To see which remote repositories you have configured, run the <code>git remote</code> command. If no output
                         is given it means you have not configured any remote repository.
                     </p>
-                    <h1>Adding remote repositories</h1>
+                    <h2>Adding remote repositories</h2>
                     <p>
                         Run <code>git remote add &ltshortname&gt &lturl&gt</code>, where "shortname" is the name you want for your remote.
                         By default, Git adds "origin" as a shortname. If you don't want to change that, your command would look like this:
                         <code>git remote add origin &lturl&gt</code>
                     </p>
-                    <h1>Fetching and pulling</h1>
+                    <h3>Fetching and pulling</h3>
                     <p>
                         To get data from your remote projects, you can run <code>git fetch &ltremote&gt</code>. This pulls down all the data
                         from that project, but doesn't merge it locally. If you want to automatically fetch and merge, you can use
                         <code>git pull</code>.
                     </p>
-                    <h1>Pushing to your remotes</h1>
+                    <h4>Pushing to your remotes</h4>
                     <p>
                         To share the changes you made locally with your remote repository, run <code>git push &ltremote&gt &ltbranch&gt</code>.
                     </p>
@@ -139,7 +139,7 @@ $ git config --global user.email johndoe@example.com</code>
             <section class="main-section" id="Reference">
                 <header>Reference</header>
                 <article>
-                    <p>All the information found here was taken from the <a class="main-link" href="https://git-scm.com/doc">Git</a> oficcial documentation.</p>
+                    <p>All the information found here was taken from the <a class="main-link" href="https://git-scm.com/doc">Git</a> official documentation.</p>
                 </article>
             </section>
         </main>

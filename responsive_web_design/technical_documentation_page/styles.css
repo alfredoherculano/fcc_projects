@@ -35,7 +35,7 @@ html {
 
 #main-doc {
     position: absolute;
-    top: -20px;
+    top: 10px;
     margin-left: 223px;
 }
 
@@ -51,7 +51,7 @@ header {
     font-size: 30px;
 }
 
-h1 {
+h1, h2, h3, h4 {
     font-weight: normal;
     font-size: 23px;
 }
