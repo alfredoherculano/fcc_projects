@@ -1,9 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Product Landing Page</title>
+        <title>Trailblazers - Experience the Outdoors</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css"
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://www.fontsquirrel.com/fonts/TeX-Gyre-Adventor">
     </head>
+    <body>
+        <header id="header">
+            <img
+                id="header-img"
+                src="https://raw.githubusercontent.com/alfredoherculano/fcc_projects/main/responsive_web_design/product_landing_page/mountain-logo-silhouette.svg"
+                width="180"
+            />
+            <div class="logo-name">Trailblazers</div>
+            <nav id="nav-bar">
+                <a class="nav-link" href="#destinations">Destinations</a>
+                <a class="nav-link" href="#about">About Us</a>
+                <a class="nav-link" href="#testimonials">Trail Tales</a>
+            </nav>
+        </header>
+        <main>
+            <section id="hero">
+                <h1>Experience the Great Outdoors</h1> <!--Think of a better title-->
+                <p>Hiking along some of the country's best trails</p> <!--And also maybe a better subtitle-->
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input
+                        name="name"
+                        id="email"
+                        type="email"
+                        placeholder="Your email here"
+                        required
+                    />
+                    <input id="submit" type="submit" value="Get in Touch" class="button"/>
+                </form>
+            </section>
+            <div class="container">
+                <section id="destinations">
+                    <div class="dest">
+                        <img
+                            class="dest-picture"
+                            src="https://www.visittenaya.com/dbcwp/wp-content/uploads/2022/11/visittenaya-copy-exploreyosemite-half-dome.jpg"
+                            width="300"
+                        />
+                        <h3>Yosemite</h3>
+                        <img
+                            class="dest-picture"
+                            src="https://esvrm.com/wp-content/uploads/2021/07/moab-activities-scaled.jpg"
+                            width="300"
+                        />
+                        <h3>Arches</h3>
+                        <img
+                            class="dest-picture"
+                            src="https://npf-prod.imgix.net/uploads/shutterstock_97706066_1.jpg"
+                            width="300"
+                        />
+                        <h3>Grand Canyon</h3>
+                    </div>
+                </section>
+                <section id="about">
+                    <h2>Explore amazing places</h2> <!--Maybe think of a synonym for 'amazing'-->
+                    <p>
+                        For the past 10 years, we've been delivering exhilarating
+                        outdoor experiences to people all around the country. Be prepared
+                        to be amazed by grand sights and beautiful landscapes while we
+                        travel together along some of nature masterpieces.
+                    </p>
+                </section>
+                <section id="testimonials">
+                    <h2>Trail Tales</h2>
+                    <article class="tales">
+                        
+                    </article>
+                </section>
+            </div>
+        </main>
+    </body>
 </html>
