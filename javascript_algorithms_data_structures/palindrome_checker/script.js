@@ -12,11 +12,16 @@ const isPalindrome = cleanedInput => {
 
 checkButton.addEventListener("click", () => {
     const textInput = cleanedInput(userInput.value);
+    
+    if (textInput.trim() === '') {
+        window.alert("Please input a value");
+    }
+
     const isPalindromeResult = isPalindrome(textInput);
 
     const resultMessage = isPalindromeResult
-        ? `${textInput} is a palindrome!`
-        : `${textInput} is not a palindrome.`;
+        ? `${userInput.value} is a palindrome!`
+        : `${userInput.value} is not a palindrome.`;
 
     resultDiv.innerHTML = resultMessage;
 });
@@ -25,4 +30,4 @@ userInput.addEventListener('keydown', check => {
     if (check.key === 'Enter') {
         checkButton.click();
     }
-})
+});

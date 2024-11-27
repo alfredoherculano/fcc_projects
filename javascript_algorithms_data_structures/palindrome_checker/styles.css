@@ -27,19 +27,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 40vw;
     margin: 240px auto;
     font-size: 1.2rem;
     color: var(--color2);
 }
 
 h1 {
+    text-align: center;
     font-size: 2.7rem;
 }
 
 .main-section {
-    margin: 40px auto;
+    margin: 40px 20px;
     padding: 0;
+    width: 60%;
 }
 
 label {
@@ -48,13 +50,18 @@ label {
     text-align: center;
 }
 
+.input-section {
+    display: flex;
+    align-items: center;
+}
+
 .input-section input,
 .input-section button {
     height: 40px;
 }
 
 input {
-    width: 40vw;
+    width: 60%;
     background-color: var(--color1);
     font-size: 1.1rem;
     text-align: center;
@@ -67,7 +74,7 @@ input:hover {
 }
 
 button {
-    width: 12.5vw;
+    width: 40%;
     background-color: var(--color3);
     color: var(--color5);
     font-size: 1.1rem;
@@ -87,3 +94,15 @@ button:hover {
     border: ridge 10px var(--color4);
     border-radius: 12px;
 }
+
+@media (max-width: 580px) {
+    body {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+/* too lazy to finish this styling, maybe I'll come back later */
