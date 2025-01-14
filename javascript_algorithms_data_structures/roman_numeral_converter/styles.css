@@ -1,0 +1,85 @@
+:root {
+    --light-red: #F22B29;
+    --dark-red: #F22B29;
+    --light-blue: #3F88C5;
+    --dark-blue: #140F2D;
+    --yellow: #F49D37;
+    --main-font: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--yellow);
+    font: var(--main-font);
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+    width: calc(100vw - 40vw);
+    font-size: 1.2rem;
+    color: var(--dark-blue);
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+.main-section {
+    margin: 30px 15px;
+    padding: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.input-section input,
+.input-section button {
+    height: 40px;
+    border-radius: 20px;
+}
+
+.input-section input {
+    flex-grow: 0.8;
+}
+
+.input-section button {
+    flex-grow: 0.2;
+    font-family: var(--main-font);
+    font-size: 1rem;
+    background-color: var(--dark-red);
+    color: var(--dark-blue);
+}
+
+input {
+    line-height: 40px;
+    overflow: hidden;
+    resize: none;
+}
