@@ -66,11 +66,22 @@ label {
     border-radius: 20px;
 }
 
-.input-section input {
+input {
     flex-grow: 0.8;
+    line-height: 40px;
+    overflow: hidden;
+    resize: none;
+    text-align: center;
+    font-size: 1.15rem;;
 }
 
-.input-section button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
     flex-grow: 0.2;
     font-family: var(--main-font);
     font-size: 1rem;
@@ -78,8 +89,18 @@ label {
     color: var(--dark-blue);
 }
 
-input {
-    line-height: 40px;
-    overflow: hidden;
-    resize: none;
+button:hover {
+    cursor: pointer;
+}
+
+#output {
+    display: block;
+    width: 90%;
+    height: 50px;
+    border: 1px solid var(--light-blue);
+    margin-top: 20px;
+    background-color: var(--dark-blue);
+    color: var(--light-red);
+    text-align: center;
+    font-size: 2.2rem;
 }
