@@ -2,57 +2,58 @@ const inputNumber = document.getElementById("number");
 const convertBtn = document.getElementById("convert-btn");
 const result = document.getElementById("output");
 
-romanNumberArr = [
-    {
-        1: "I",
-        5: "V",
-        10: "X",
-        50: "L",
-        100: "C",
-        500: "D",
-        1000: "M"
-    },
-
-    {
-        4: "IV",
-        9: "IX",
-        40: "XL",
-        90: "XC",
-        400: "CD",
-        900: "CM"
-    }
-];
+const romanNumbers = {
+    1000: "M",
+    900: "CM",
+    500: "D",
+    400: "CD",
+    100: "C",
+    90: "XC",
+    50: "L",
+    40: "XL",
+    10: "X",
+    9: "IX",
+    5: "V",
+    4: "IV",
+    1: "I"
+};
 
 const isValidNumber = () => {
-    input = inputNumber.value;
+    const input = inputNumber.value;
 
     if (input > 3999) {
-        return result.innerText = "Please enter a number less than or equal to 3999";
+        result.innerText = "Please enter a number less than or equal to 3999";
+        return false;
     }
 
     else if (input < 1) {
-        return result.innerText = "Please enter a number greater than or equal to 1";
+        result.innerText = "Please enter a number greater than or equal to 1";
+        return false;
     }
 
     else if (!/^\d+$/.test(input)) {
-        return result.innerText = "Please enter a valid number";
+        result.innerText = "Please enter a valid number";
+        return false;
     }
 
     return true;
 };
 
 const convertToRoman = () => {
-    if (!isValidNumber()) {
-        return; // Stop conversion if validation fails
-    }
+    if (isValidNumber()) {
+        let roman = "";
+        const num = parseInt(inputNumber.value);
+        const keys = Object.keys(romanNumbers);
 
-    const input = inputNumber.value;
-    const num = parseInt(input);
-
-    for (const obj of romanNumberArr) {
-        if (num in obj) {
-            result.innerText = obj[num];
+        for (const key of keys) {
+            const value = parseInt(key);
+            while (num >= value) {
+                roman += romanNumbers[value];
+                num -= value;
+            }
         }
+
+        result.innerText = roman;
     }
 };
 
