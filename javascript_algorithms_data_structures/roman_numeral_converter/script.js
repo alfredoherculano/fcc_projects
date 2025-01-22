@@ -26,6 +26,11 @@ const isValidNumber = () => {
         return false;
     }
 
+    else if (input === "") {
+        result.innerText = "Please enter a valid number";
+        return false;
+    }
+
     else if (input < 1) {
         result.innerText = "Please enter a number greater than or equal to 1";
         return false;
