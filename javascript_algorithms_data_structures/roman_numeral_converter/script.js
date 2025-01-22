@@ -42,8 +42,8 @@ const isValidNumber = () => {
 const convertToRoman = () => {
     if (isValidNumber()) {
         let roman = "";
-        const num = parseInt(inputNumber.value);
-        const keys = Object.keys(romanNumbers);
+        let num = parseInt(inputNumber.value);
+        const keys = Object.keys(romanNumbers).reverse();
 
         for (const key of keys) {
             const value = parseInt(key);
